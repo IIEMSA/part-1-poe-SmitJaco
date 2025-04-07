@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to EventEase</h1>
+    <p class="lead">Your Venue Booking Solution</p>
+    <p>Discover amazing venues, explore upcoming events, and book your next event with ease.</p>
+</div>
+
+<!-- Call-to-Action Buttons -->
+<div class="text-center mb-5">
+    <a asp-controller="Venues" asp-action="Index" class="btn btn-primary btn-lg mx-2">Explore Venues</a>
+    <a asp-controller="Events" asp-action="Index" class="btn btn-secondary btn-lg mx-2">View Events</a>
+    <a asp-controller="Bookings" asp-action="Create" class="btn btn-success btn-lg mx-2">Book Now</a>
+</div>
+
+<!-- Featured Venues Section -->
+<div class="mb-5">
+    <h2 class="text-center">Featured Venues</h2>
+    @if (ViewBag.FeaturedVenues != null && ViewBag.FeaturedVenues.Count > 0)
+    {
+        <div class="row">
+            @foreach (var venue in ViewBag.FeaturedVenues)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        @if (!string.IsNullOrEmpty(venue.ImageURL))
+                        {
+                            <img src="@venue.ImageURL" class="card-img-top" alt="@venue.VenueName" style="height: 200px; object-fit: cover;" />
+                        }
+                        else
+                        {
+                            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="No Image" style="height: 200px; object-fit: cover;" />
+                        }
+                        <div class="card-body">
+                            <h5 class="card-title">@venue.VenueName</h5>
+                            <p class="card-text">
+                                <strong>Location:</strong> @venue.Location<br />
+                                <strong>Capacity:</strong> @venue.Capacity
+                            </p>
+                            <a asp-controller="Venues" asp-action="Details" asp-route-id="@venue.VenueId" class="btn btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p class="text-center">No featured venues available. <a asp-controller="Venues" asp-action="Create">Add a venue</a> to get started!</p>
+    }
+</div>
+
+<!-- Upcoming Events Section -->
+<div class="mb-5">
+    <h2 class="text-center">Upcoming Events</h2>
+    @if (ViewBag.UpcomingEvents != null && ViewBag.UpcomingEvents.Count > 0)
+    {
+        <div class="row">
+            @foreach (var eventItem in ViewBag.UpcomingEvents)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">@eventItem.EventName</h5>
+                            <p class="card-text">
+                                <strong>Date:</strong> @eventItem.EventDate.ToString("dd/MM/yyyy")<br />
+                                <strong>Venue:</strong> @eventItem.Venue.VenueName<br />
+                                <strong>Description:</strong> @(eventItem.Description ?? "No description available")
+                            </p>
+                            <a asp-controller="Events" asp-action="Details" asp-route-id="@eventItem.EventId" class="btn btn-outline-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p class="text-center">No upcoming events available. <a asp-controller="Events" asp-action="Create">Add an event</a> to get started!</p>
+    }
+</div>

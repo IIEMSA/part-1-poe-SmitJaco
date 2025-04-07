@@ -1,0 +1,32 @@
+﻿@model EventEase.Models.Booking
+
+<h1>Booking Details</h1>
+
+<div>
+    <h4>Booking</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Event)
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Event?.EventName ?? "N/A"
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Venue)
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Venue?.VenueName ?? "N/A"
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BookingDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BookingDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.BookingId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
