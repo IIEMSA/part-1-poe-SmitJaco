@@ -218,5 +218,32 @@ namespace EventEase.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
+
+        //Search
+        public async Task<IActionResult> BookingDisplay(string searchString)
+        {
+            var query = _context.Bookings
+                .Include(b => b.Event)
+                .Include(b => b.Venue)
+                .Select(b => new BookingViewModel
+                {
+                    BookingId = b.BookingId,
+                    EventName = b.Event!.EventName,
+                    EventDate = b.Event.EventDate,
+                    VenueName = b.Venue!.VenueName,
+                    Location = b.Venue.Location,
+                    BookingDate = b.BookingDate
+                });
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                query = query.Where(b =>
+                    b.BookingId.ToString().Contains(searchString) ||
+                    b.EventName.Contains(searchString));
+            }
+
+            var results = await query.ToListAsync();
+            return View(results);
+        }
     }
 }

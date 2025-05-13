@@ -1,0 +1,39 @@
+﻿@model IEnumerable<EventEase.Models.BookingViewModel>
+@{
+    ViewData["Title"] = "Booking Display";
+}
+
+<h2>Booking Display</h2>
+
+<form asp-action="BookingDisplay" method="get">
+    <input type="text" name="searchString" placeholder="Search by Booking ID or Event Name" class="form-control" style="width: 300px; display: inline;" />
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+<br />
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Booking ID</th>
+            <th>Event Name</th>
+            <th>Event Date</th>
+            <th>Venue Name</th>
+            <th>Location</th>
+            <th>Booking Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var booking in Model)
+        {
+            <tr>
+                <td>@booking.BookingId</td>
+                <td>@booking.EventName</td>
+                <td>@booking.EventDate.ToShortDateString()</td>
+                <td>@booking.VenueName</td>
+                <td>@booking.Location</td>
+                <td>@booking.BookingDate.ToShortDateString()</td>
+            </tr>
+        }
+    </tbody>
+</table>
