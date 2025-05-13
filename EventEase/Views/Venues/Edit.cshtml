@@ -1,16 +1,30 @@
 ﻿@model EventEase.Models.Venue
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Venue";
 }
 
-<h1>Edit</h1>
+<h1>Edit Venue</h1>
 
-<h4>Venue</h4>
 <hr />
+@if (ViewData.ModelState.Any(x => x.Value.Errors.Any()))
+{
+    <div class="alert alert-danger">
+        <strong>Please correct the following errors:</strong>
+        <ul>
+            @foreach (var modelState in ViewData.ModelState)
+            {
+                foreach (var error in modelState.Value.Errors)
+                {
+                    <li>@error.ErrorMessage</li>
+                }
+            }
+        </ul>
+    </div>
+}
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="VenueId" />
             <div class="form-group">
@@ -25,13 +39,17 @@
             </div>
             <div class="form-group">
                 <label asp-for="Capacity" class="control-label"></label>
-                <input asp-for="Capacity" class="form-control" />
+                <input asp-for="Capacity" class="form-control" type="number" />
                 <span asp-validation-for="Capacity" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ImageURL" class="control-label"></label>
-                <input asp-for="ImageURL" class="form-control" />
-                <span asp-validation-for="ImageURL" class="text-danger"></span>
+                <label asp-for="ImageFile" class="control-label"> (optional, leave blank to keep existing)</label>
+                <input asp-for="ImageFile" class="form-control" type="file" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                {
+                    <p>Current Image: <img src="@Model.ImageUrl" alt="Venue Image" style="max-width: 200px; border-radius: 8px;" /></p>
+                }
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
@@ -45,5 +63,15 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        document.getElementById('ImageFile').addEventListener('change', function(e) {
+            if (e.target.files[0].size > 5 * 1024 * 1024) {
+                alert('Image file must be less than 5MB.');
+                e.target.value = '';
+            }
+        });
+    </script>
 }

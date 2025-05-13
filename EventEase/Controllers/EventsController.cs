@@ -23,7 +23,7 @@ namespace EventEase.Controllers
             return View(events);
         }
 
-        //: Events/Details/5
+        //: Events/Details
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -31,15 +31,16 @@ namespace EventEase.Controllers
                 return NotFound();
             }
 
-            var eventItem = await _context.Events
-                .Include(e => e.Venue)
+            var evt = await _context.Events
+                .Include(e => e.Venue) 
                 .FirstOrDefaultAsync(m => m.EventId == id);
-            if (eventItem == null)
+
+            if (evt == null)
             {
                 return NotFound();
             }
 
-            return View(eventItem);
+            return View(evt);
         }
 
         //: Events/Create
@@ -64,7 +65,7 @@ namespace EventEase.Controllers
             return View(eventItem);
         }
 
-        //: Events/Edit/5
+        //: Events/Edit
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -81,7 +82,7 @@ namespace EventEase.Controllers
             return View(eventItem);
         }
 
-        //: Events/Edit/5
+        //: Events/Edit
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("EventId,EventName,EventDate,Description,VenueId")] Event eventItem)
@@ -112,7 +113,7 @@ namespace EventEase.Controllers
             return View(eventItem);
         }
 
-        //: Events/Delete/5
+        // Events Delete
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -122,6 +123,7 @@ namespace EventEase.Controllers
 
             var eventItem = await _context.Events
                 .Include(e => e.Venue)
+                .Include(e => e.Bookings) // Include Bookings for consistency
                 .FirstOrDefaultAsync(m => m.EventId == id);
             if (eventItem == null)
             {
@@ -131,25 +133,28 @@ namespace EventEase.Controllers
             return View(eventItem);
         }
 
-        //: Events/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var eventItem = await _context.Events.FindAsync(id);
-            if (eventItem != null)
+            var eventItem = await _context.Events
+                .Include(e => e.Bookings) // Include Bookings for validation
+                .FirstOrDefaultAsync(e => e.EventId == id);
+            if (eventItem == null)
             {
-                // Check if there are any bookings associated with this event
-                var hasBookings = await _context.Bookings.AnyAsync(b => b.EventId == id);
-                if (hasBookings)
-                {
-                    ModelState.AddModelError("", "Cannot delete event because it has associated bookings.");
-                    return View(eventItem);
-                }
-
-                _context.Events.Remove(eventItem);
-                await _context.SaveChangesAsync();
+                return NotFound();
             }
+
+            // Check if there are any bookings associated with this event
+            var hasBookings = eventItem.Bookings != null && eventItem.Bookings.Any();
+            if (hasBookings)
+            {
+                ModelState.AddModelError("", "Cannot delete event because it has associated bookings.");
+                return View(eventItem);
+            }
+
+            _context.Events.Remove(eventItem);
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
     }
