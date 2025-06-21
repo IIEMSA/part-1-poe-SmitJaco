@@ -668,7 +668,6 @@ C:\Users\lab_services_student\Desktop\part-1-poe-SmitJaco\EventEase\obj\Debug\ne
 C:\Users\lab_services_student\Desktop\part-1-poe-SmitJaco\EventEase\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.EventEase.props
 C:\Users\lab_services_student\Desktop\part-1-poe-SmitJaco\EventEase\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.EventEase.props
 C:\Users\lab_services_student\Desktop\part-1-poe-SmitJaco\EventEase\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\lab_services_student\Desktop\part-1-poe-SmitJaco\EventEase\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\lab_services_student\Desktop\part-1-poe-SmitJaco\EventEase\obj\Debug\net9.0\EventEase.csproj.Up2Date
 C:\Users\lab_services_student\Desktop\part-1-poe-SmitJaco\EventEase\obj\Debug\net9.0\EventEase.dll
 C:\Users\lab_services_student\Desktop\part-1-poe-SmitJaco\EventEase\obj\Debug\net9.0\refint\EventEase.dll
@@ -678,3 +677,4 @@ C:\Users\lab_services_student\Desktop\part-1-poe-SmitJaco\EventEase\obj\Debug\ne
 C:\Users\lab_services_student\Desktop\part-1-poe-SmitJaco\EventEase\bin\Debug\net9.0\Azure.Storage.Blobs.dll
 C:\Users\lab_services_student\Desktop\part-1-poe-SmitJaco\EventEase\bin\Debug\net9.0\Azure.Storage.Common.dll
 C:\Users\lab_services_student\Desktop\part-1-poe-SmitJaco\EventEase\bin\Debug\net9.0\System.IO.Hashing.dll
+C:\Users\lab_services_student\Desktop\part-1-poe-SmitJaco\EventEase\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

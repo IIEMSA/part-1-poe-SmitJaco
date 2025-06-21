@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace EventEase.Migrations
 {
     /// <inheritdoc />
-    public partial class initialCreate : Migration
+    public partial class CleanUpEventType : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -50,31 +50,31 @@ namespace EventEase.Migrations
                 });
 
             migrationBuilder.CreateTable(
-     name: "Bookings",
-     columns: table => new
-     {
-         BookingId = table.Column<int>(type: "int", nullable: false)
-             .Annotation("SqlServer:Identity", "1, 1"),
-         EventId = table.Column<int>(type: "int", nullable: false),
-         VenueId = table.Column<int>(type: "int", nullable: false),
-         BookingDate = table.Column<DateTime>(type: "datetime2", nullable: false)
-     },
-     constraints: table =>
-     {
-         table.PrimaryKey("PK_Bookings", x => x.BookingId);
-         table.ForeignKey(
-             name: "FK_Bookings_Events_EventId",
-             column: x => x.EventId,
-             principalTable: "Events",
-             principalColumn: "EventId",
-             onDelete: ReferentialAction.Cascade);
-         table.ForeignKey(
-     name: "FK_Bookings_Venues_VenueId",
-     column: x => x.VenueId,
-     principalTable: "Venues",
-     principalColumn: "VenueId",
-     onDelete: ReferentialAction.NoAction); 
-     });
+                name: "Bookings",
+                columns: table => new
+                {
+                    BookingId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    EventId = table.Column<int>(type: "int", nullable: false),
+                    VenueId = table.Column<int>(type: "int", nullable: false),
+                    BookingDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Bookings", x => x.BookingId);
+                    table.ForeignKey(
+                        name: "FK_Bookings_Events_EventId",
+                        column: x => x.EventId,
+                        principalTable: "Events",
+                        principalColumn: "EventId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Bookings_Venues_VenueId",
+                        column: x => x.VenueId,
+                        principalTable: "Venues",
+                        principalColumn: "VenueId",
+                        onDelete: ReferentialAction.Cascade);
+                });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Bookings_EventId",

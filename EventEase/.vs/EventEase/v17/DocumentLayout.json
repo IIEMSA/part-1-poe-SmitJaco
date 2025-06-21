@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\controllers\\venuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:controllers\\venuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\views\\bookings\\bookingdisplay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:views\\bookings\\bookingdisplay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -19,32 +11,36 @@
       "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\models\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:models\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\views\\events\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:views\\events\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\views\\events\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:views\\events\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\models\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:models\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\views\\venues\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:views\\venues\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\views\\events\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:views\\events\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-smitjaco\\eventease\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BAF4D90-331E-4892-9129-B9AB37D5D7E0}|EventEase.csproj|solutionrelative:models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,74 +50,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Views\\Bookings\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Bookings\\Index.cshtml",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Views\\Bookings\\Index.cshtml",
-              "RelativeToolTip": "Views\\Bookings\\Index.cshtml",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAIwBkAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-13T19:43:06.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookingViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Models\\BookingViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\BookingViewModel.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Models\\BookingViewModel.cs",
-              "RelativeToolTip": "Models\\BookingViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwDQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T19:39:56.899Z",
+              "WhenOpened": "2025-06-21T20:06:03.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BookingsController.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Controllers\\BookingsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BookingsController.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Controllers\\BookingsController.cs",
-              "RelativeToolTip": "Controllers\\BookingsController.cs",
-              "ViewState": "AgIAANUAAAAAAAAAAAAUwOAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T18:11:21.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Views\\Events\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Events\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Views\\Events\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Events\\Delete.cshtml",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAIwB4AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-13T18:08:53.817Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "EventsController.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Controllers\\EventsController.cs",
               "RelativeDocumentMoniker": "Controllers\\EventsController.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Controllers\\EventsController.cs",
               "RelativeToolTip": "Controllers\\EventsController.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAswJYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAwwKAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T18:08:36.012Z"
+              "WhenOpened": "2025-06-21T20:20:33.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-21T18:16:40.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingsController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "Controllers\\BookingsController.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAIwP8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T18:08:35.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookingDisplay.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Views\\Bookings\\BookingDisplay.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bookings\\BookingDisplay.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Views\\Bookings\\BookingDisplay.cshtml",
+              "RelativeToolTip": "Views\\Bookings\\BookingDisplay.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T18:04:35.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Views\\Events\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Events\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Views\\Events\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Events\\Edit.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T18:02:25.921Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Views\\Events\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Events\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Views\\Events\\Create.cshtml",
+              "RelativeToolTip": "Views\\Events\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T17:58:48.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Booking.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "Models\\Booking.cs",
@@ -129,8 +153,19 @@
               "RelativeToolTip": "Models\\Booking.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T18:08:15.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-21T12:24:24.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Venue.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Models\\Venue.cs",
+              "RelativeDocumentMoniker": "Models\\Venue.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Models\\Venue.cs",
+              "RelativeToolTip": "Models\\Venue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T12:24:00.523Z"
             },
             {
               "$type": "Document",
@@ -140,60 +175,9 @@
               "RelativeDocumentMoniker": "Models\\Event.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Models\\Event.cs",
               "RelativeToolTip": "Models\\Event.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T18:08:01.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Venue.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Models\\Venue.cs",
-              "RelativeDocumentMoniker": "Models\\Venue.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Models\\Venue.cs",
-              "RelativeToolTip": "Models\\Venue.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T18:07:10.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Views\\Venues\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Venues\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Views\\Venues\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Venues\\Delete.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAIwDUAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-13T18:05:29.57Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VenuesController.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Controllers\\VenuesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\VenuesController.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Controllers\\VenuesController.cs",
-              "RelativeToolTip": "Controllers\\VenuesController.cs",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAIwOUAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T18:05:00.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BookingDisplay.cshtml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Views\\Bookings\\BookingDisplay.cshtml",
-              "RelativeDocumentMoniker": "Views\\Bookings\\BookingDisplay.cshtml",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-SmitJaco\\EventEase\\Views\\Bookings\\BookingDisplay.cshtml",
-              "RelativeToolTip": "Views\\Bookings\\BookingDisplay.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-13T19:42:12.92Z",
+              "WhenOpened": "2025-06-21T12:23:45.762Z",
               "EditorCaption": ""
             }
           ]

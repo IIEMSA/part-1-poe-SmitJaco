@@ -5,12 +5,31 @@
 
 <h2>Booking Display</h2>
 
-<form asp-action="BookingDisplay" method="get">
-    <input type="text" name="searchString" placeholder="Search by Booking ID or Event Name" class="form-control" style="width: 300px; display: inline;" />
-    <button type="submit" class="btn btn-primary">Search</button>
-</form>
+<form asp-action="BookingDisplay" method="get" class="form-inline mb-3">
+    <input type="text" name="searchString" class="form-control mr-2" placeholder="Search Booking ID or Event Name" />
 
-<br />
+    <select name="venueIdFilter" class="form-control mr-2">
+        <option value="">Unavailable Venues</option>
+        @foreach (var venue in ViewBag.Venues as List<SelectListItem>)
+        {
+            <option value="@venue.Value">@venue.Text</option>
+        }
+    </select>
+
+
+    <select name="eventTypeFilter" class="form-control mr-2">
+        <option value="">All Event Types</option>
+        @foreach (var type in ViewBag.EventTypes as List<string>)
+        {
+            <option value="@type">@type</option>
+        }
+    </select>
+
+    <input type="date" name="startDate" class="form-control mr-2" />
+    <input type="date" name="endDate" class="form-control mr-2" />
+
+    <button type="submit" class="btn btn-primary">Filter</button>
+</form>
 
 <table class="table table-bordered table-striped">
     <thead>

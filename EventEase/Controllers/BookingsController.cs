@@ -220,8 +220,16 @@ namespace EventEase.Controllers
         }
 
         //Search
-        public async Task<IActionResult> BookingDisplay(string searchString)
+        public async Task<IActionResult> BookingDisplay(string searchString, string eventTypeFilter, DateTime? startDate, DateTime? endDate, int? venueIdFilter)
         {
+            ViewBag.EventTypes = new List<string> { "Conference", "Wedding", "Birthday", "Corporate" };
+            ViewBag.Venues = await _context.Venues
+                .Select(v => new SelectListItem
+                {
+                    Value = v.VenueId.ToString(),
+                    Text = v.VenueName
+                }).ToListAsync();
+
             var query = _context.Bookings
                 .Include(b => b.Event)
                 .Include(b => b.Venue)
@@ -232,7 +240,7 @@ namespace EventEase.Controllers
                     EventDate = b.Event.EventDate,
                     VenueName = b.Venue!.VenueName,
                     Location = b.Venue.Location,
-                    BookingDate = b.BookingDate
+                    BookingDate = b.BookingDate,
                 });
 
             if (!string.IsNullOrEmpty(searchString))
@@ -242,8 +250,30 @@ namespace EventEase.Controllers
                     b.EventName.Contains(searchString));
             }
 
+            if (!string.IsNullOrEmpty(eventTypeFilter))
+            {
+                query = query.Where(b => b.EventName.Contains(eventTypeFilter));
+            }
+
+            if (startDate.HasValue && endDate.HasValue)
+            {
+                query = query.Where(b => b.BookingDate >= startDate && b.BookingDate <= endDate);
+            }
+
+            if (venueIdFilter.HasValue)
+            {
+                query = query.Where(b => b.VenueName == _context.Venues
+                    .Where(v => v.VenueId == venueIdFilter)
+                    .Select(v => v.VenueName)
+                    .FirstOrDefault());
+            }
+
             var results = await query.ToListAsync();
             return View(results);
         }
+
+
+
+
     }
 }

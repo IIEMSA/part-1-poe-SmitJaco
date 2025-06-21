@@ -216,7 +216,8 @@ namespace EventEase.Controllers
         // Uploads an image to Azure Blob Storage and returns the Blob URL
         private async Task<string> UploadImageToBlobAsync(IFormFile imageFile)
         {
-
+            var connectionString = "DefaultEndpointsProtocol=https;AccountName=storageeventeasepart2;AccountKey=zncFQ9QgNDrz+3feFhZiNX5+UWeebEFzTtg+U7vqgiUqXcomtbGlxum/SHJgszhqlXitOvE1T4dI+ASti01yvg==;EndpointSuffix=core.windows.net";
+            var containerName = "cldv6211poepart2";
 
             var blobServiceClient = new BlobServiceClient(connectionString);
             var containerClient = blobServiceClient.GetBlobContainerClient(containerName);
